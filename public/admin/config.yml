@@ -12,7 +12,7 @@ collections:
   - name: "indeed-clone"
     label: "Indeed-clone"
     folder: "src/vacancies"
-    create: "true"
+    create: true
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "date", name: "date", widget: "string" }
