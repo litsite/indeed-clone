@@ -22,6 +22,6 @@ collections:
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Salary", name: "salary", widget: "string" }
       - { label: "Shift", name: "shift", widget: "string" }
-      - { label: "type", name: "type", widget: "string" }
+      - { label: "Type", name: "type", widget: "string" }
       - { label: "Desc1", name: "desc1", widget: "string" }
       - { label: "Desc2", name: "desc2", widget: "string" }
