@@ -13,6 +13,7 @@ collections:
     label: "vacancies"
     folder: "src/vacancies"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
