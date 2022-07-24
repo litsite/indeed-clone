@@ -1,6 +1,5 @@
 ---
 title: second vacancy
-date: 2022-07-22
 tags: post
 company: D&W
 location: London

@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="/styling.css">
      <!---- Boxicons CDN -->
      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -72,13 +73,13 @@
                         <li>Some description goes here from desc2</li>
                     </ul>
                 </div>
-            </a><a href="/vacancies/vacancy2/">
+            </a><a href="/vacancies/vacancy3/">
                 <div class="job-card">
-                    <h3>second vacancy</h3>
+                    <h3>Third vacancy</h3>
                     <p class="job-company">D&amp;W</p>
-                    <p class="job-location">London</p>
+                    <p class="job-location">Leeds</p>
                     <ul class="job-features">
-                        <li>£20000</li>
+                        <li>£50000 - £70000</li>
                         <li>full time</li>
                         <li>8 hours</li>
                     </ul>
@@ -87,13 +88,13 @@
                         <li>Some description goes here from desc2</li>
                     </ul>
                 </div>
-            </a><a href="/vacancies/vacancy3/">
+            </a><a href="/vacancies/vacancy2/">
                 <div class="job-card">
-                    <h3>Third vacancy</h3>
+                    <h3>second vacancy</h3>
                     <p class="job-company">D&amp;W</p>
-                    <p class="job-location">Leeds</p>
+                    <p class="job-location">London</p>
                     <ul class="job-features">
-                        <li>£50000 - £70000</li>
+                        <li>£20000</li>
                         <li>full time</li>
                         <li>8 hours</li>
                     </ul>
@@ -139,6 +140,16 @@
          <script src="jobs.js"></script>
 
 
-
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script
 </body>
 </html>
