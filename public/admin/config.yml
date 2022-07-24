@@ -15,11 +15,11 @@ collections:
     create: "true"
     fields:
       - { label: "title", name: "title", widget: "string" }
-       - { label: "date", name: "date", widget: "string" }
+      - { label: "date", name: "date", widget: "string" }
       - { label: "company", name: "title", widget: "string" }
       - { label: "tags", name: "title", widget: "string" }
       - { label: "location", name: "title", widget: "string" }
       - { label: "salary", name: "title", widget: "string" }
       - { label: "shift", name: "title", widget: "string" }
-      { label: "desc1", name: "title", widget: "string" }
-      { label: "desc2", name: "title", widget: "string" }
+      - { label: "desc1", name: "title", widget: "string" }
+      - { label: "desc2", name: "title", widget: "string" }
