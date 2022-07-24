@@ -18,7 +18,6 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: "post"}
       - { label: "Company", name: "company", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Salary", name: "salary", widget: "string" }
       - { label: "Shift", name: "shift", widget: "string" }
