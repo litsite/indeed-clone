@@ -1,0 +1,30 @@
+<footer>
+            this is a footer
+        </footer>
+        <script>
+    
+            let headerSearch = document.getElementById('header-search');
+             
+            let pageNavBtns = document.querySelectorAll('#page-nav button');
+             console.log(pageNavBtns);
+             
+             pageNavBtns.forEach(btn=>{
+                 btn.addEventListener('click', function(){
+                     if(!btn.classList.contains('active')){
+                         btn.classList.add('active')
+                     }
+                 })
+             })
+             
+             
+             headerSearch.onclick = function(){
+                 let searchView = document.getElementById('search-view');
+                 const back = document.querySelector('.back-button');
+                 
+                 searchView.classList.add('show');
+                 back.onclick = function(){
+                     searchView.classList.remove('show');
+                 }
+             }
+         </script>
+         <script src="jobs.js"></script>

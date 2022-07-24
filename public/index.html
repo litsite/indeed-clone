@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>home</title>
+     <link rel="stylesheet" href="/styling.css">
+     <!---- Boxicons CDN -->
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<header>ddd    
+            <div id="site-header">
+                <div id="site-logo">
+                    <a href="/index.html"><h2>indeed</h2></a>
+                </div>
+                <ul>
+                    <li><a href="#"><i class='bx bxs-message-detail' ></i></a></li>
+                    <li><a href="#"><i class='bx bxs-bell'></i></a></li>
+                    <li><i class='bx bx-menu'></i></li>
+                </ul>
+            </div>
+            <div id="header-search">
+                <div class="search-field">
+                    <div class="input-field">
+                    <i class='bx bx-search-alt-2' ></i>
+                        <input type="text" placeholder="Job title, keywords or company"> 
+                    </div>
+                    <div id="suggested">
+                        <i class='bx bxs-map' ></i>
+                        <button>button</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="search-view">
+                <div class="back-button" style="margin-right: 10px;
+                        font-size: 20px;">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                    
+                    <div class="input-field">
+                    <i class='bx bx-search-alt-2' ></i>
+                        <input type="text" placeholder="Job title, keywords or company"> 
+                    </div>
+                    
+                    <div id="search-button">
+                        <button>Find jobs</button>
+                    </div>
+            </div>
+        </header>
+<main>
+        <div id="page-nav">
+            <button class="active">Job Feed</button>
+            <button>Recent searches</button>
+        </div>
+
+        <div id="job-feed"><a href="/vacancies/vacancy1/">
+                <div class="job-card">
+                    <h3>first vacancy</h3>
+                    <p class="job-company">D&amp;W</p>
+                    <p class="job-location">Manchester</p>
+                    <ul class="job-features">
+                        <li>£20000</li>
+                        <li>Part time</li>
+                        <li>8 hours</li>
+                    </ul>
+                    <ul class="job-desc">
+                        <li>Some description goes here from desc1</li>
+                        <li>Some description goes here from desc2</li>
+                    </ul>
+                </div>
+            </a><a href="/vacancies/vacancy2/">
+                <div class="job-card">
+                    <h3>second vacancy</h3>
+                    <p class="job-company">D&amp;W</p>
+                    <p class="job-location">London</p>
+                    <ul class="job-features">
+                        <li>£20000</li>
+                        <li>full time</li>
+                        <li>8 hours</li>
+                    </ul>
+                    <ul class="job-desc">
+                        <li>Some description goes here from desc1</li>
+                        <li>Some description goes here from desc2</li>
+                    </ul>
+                </div>
+            </a><a href="/vacancies/vacancy3/">
+                <div class="job-card">
+                    <h3>Third vacancy</h3>
+                    <p class="job-company">D&amp;W</p>
+                    <p class="job-location">Leeds</p>
+                    <ul class="job-features">
+                        <li>£50000 - £70000</li>
+                        <li>full time</li>
+                        <li>8 hours</li>
+                    </ul>
+                    <ul class="job-desc">
+                        <li>Some description goes here from desc1</li>
+                        <li>Some description goes here from desc2</li>
+                    </ul>
+                </div>
+            </a>
+          
+        </div>
+ 
+</main>
+<footer>
+            this is a footer
+        </footer>
+        <script>
+    
+            let headerSearch = document.getElementById('header-search');
+             
+            let pageNavBtns = document.querySelectorAll('#page-nav button');
+             console.log(pageNavBtns);
+             
+             pageNavBtns.forEach(btn=>{
+                 btn.addEventListener('click', function(){
+                     if(!btn.classList.contains('active')){
+                         btn.classList.add('active')
+                     }
+                 })
+             })
+             
+             
+             headerSearch.onclick = function(){
+                 let searchView = document.getElementById('search-view');
+                 const back = document.querySelector('.back-button');
+                 
+                 searchView.classList.add('show');
+                 back.onclick = function(){
+                     searchView.classList.remove('show');
+                 }
+             }
+         </script>
+         <script src="jobs.js"></script>
+
+
+
+</body>
+</html>
