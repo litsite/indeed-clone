@@ -6,6 +6,7 @@ company: Manchester United
 location: Manchester
 salary: Alot
 shift: dsjsjisd
+type: Some type
 desc1: sdjds
 desc2: sdjijdisnds
 ---
